@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  id="myBtn">Click me!!!!</button>
+    <p id="demo"></p>
+    <script>
+        var  x = document.getElementById("myBtn");
+        x.addEventListener("mouseover",first);
+        x.addEventListener("click",second);
+        x.addEventListener("mouseout",third);
+
+        function first(){
+           document.getElementById("demo").innerHTML +="Mouse is  up ! <br>";
+        }
+
+         function second(){
+           document.getElementById("demo").innerHTML +=" I am touching !<br>";
+         }
+         function third(){
+           document.getElementById("demo").innerHTML+="mouse out ! <br>";
+         }
+   </script>
+</body>
+</html>
